@@ -1,6 +1,8 @@
 #pragma once
 #include "knapsack.hpp"
 
+#include <queue>
+
 namespace kp {
 
 /* Solves the given instance with a dynamic programming approach. Items doesn't have to be
