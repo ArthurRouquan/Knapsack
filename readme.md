@@ -22,8 +22,8 @@ Weight: 15
 
 ## Implemented Algorithms
 
-* `bellman` solves an instance with dynamic programming scheme. Items doesn't have to be sorted. Doesn't build the entire table, only work with one column.
-* `bb_best_first_seach` solves an instance a primal Branch & Bound, Best First Search. Items are expected to be sorted by increasing efficiency. It uses two tricks to speed up the process:
+* `bellman` solves an instance with dynamic programming scheme. Items doesn't have to be sorted. Doesn't build the entire table, only works with one column.
+* `bb_best_first_seach` solves an instance using a primal Branch & Bound, Best First Search. Items are expected to be sorted by increasing efficiency. It uses two tricks to speed up the process:
   * Nodes whose the residual capacity is strictly less than the minimum weight among the remaining items are eluded.
   * The upper bound is calculated in quasi-linear time with a dichotomic search.
 
